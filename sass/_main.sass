@@ -480,7 +480,7 @@ header
         padding-bottom: 20px
     .l2_video
       position: relative
-      margin-top: 35px
+      margin-top: 50px
       h4
         font-weight: normal
         font-size: 16px
@@ -488,6 +488,7 @@ header
         text-align: center
         font-family: 'conv_segoeprintregular'
         margin-top: 5px
+        margin-bottom: 10px
       i
         position: absolute
         background: url(../img/logo_firstChannel.png)
@@ -497,20 +498,32 @@ header
         right: 0
         z-index: 2
       .video
-        display: table
+        display: block
         margin: 0 auto
         position: relative
+        width: 280px
+        height: 160px
+        text-align: center
+
+        img
+          position: absolute
+          top: 0
+          right: 0
+          left: 0
+          bottom: 0
+
         &:hover
           +opacity(0.8)
         .img_video
-          width: 280px
-          left: 160px
           +border-radius(5px)
+
         .play
-          display: table-cell
-          vertical-align: middle
+          display: inline-block
+          width: 60px
+          height: 60px
           position: relative
-          left: -50%
+          top: 45px
+
       .shadow
         display: table
         margin: -30px auto 0
