@@ -390,6 +390,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icons-s7db1d080de.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2257,
+		"inputAbbreviatedPath": "\/img\/icons-s7db1d080de.png",
+		"outputAbbreviatedPath": "\/img\/icons-s7db1d080de.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons\/action_arrow.png": {
 		"fileType": 32768,
 		"ignore": 0,
