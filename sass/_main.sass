@@ -1,0 +1,856 @@
+// Normally mainpage styles 
+//+font('Conv_SegoePrintRegular', 'SegoePrintRegular')
+
+
+input.error, textarea.error
+  box-shadow: inset 0 0 10px red !important
+label.error
+  display: none !important
+
+
+.icon
+  display: inline-block
+  position: relative
+
+body
+  font-size: 16px
+  line-height: 1.4
+  background-color: #fff
+  color: #5a5a5a
+  +pfl
+.out
+  position: relative
+input, textarea
+  +placeholder
+    font-size: 16px
+    color: #8c8c8c
+    +pfl
+%in
+  max-width: 1200px
+  width: 1000px
+  margin-left: auto
+  margin-right: auto
+
+.myFancyClose
+  position: absolute
+  top: -17px
+  right: -18px
+
+.btn
+  display: inline-block
+  +border-radius(4px)
+  text-decoration: none
+  padding: 10px 20px
+  +transition(background, .5s)
+.title
+  text-align: center
+  font-size: 60px
+  +pfl
+  line-height: 1.3em
+  span
+    font-family: 'conv_pfdintextcondpro-bold'
+    text-transform: uppercase
+
+
+header
+  background: url(../img/header_bg.jpg) center no-repeat
+  +background-size(cover)
+  height: 1145px
+  +box
+  .header_in
+    @extend %in
+    +clr
+    position: relative
+    padding-top: 25px
+  .top
+    background: rgba(#fff, 0.7)
+    height: 100px
+
+  nav
+    float: left
+    ul
+      font-size: 18px
+      padding: 0
+      li
+        display: inline-block
+        float: left
+        margin-right: 16px
+        font-family: 'conv_pfdintextcondpro-lightital'
+        border-right: solid 1px
+        color: #5a5a5a
+        line-height: 1em
+        padding-right: 20px
+        &:last-child
+          border: none
+        a
+          text-decoration: none
+          color: inherit
+          border-bottom: solid 1px
+          &:hover
+            border-bottom: solid 3px
+          &.is-active
+            border-bottom: solid 3px
+
+
+
+  .top_phone
+    float: right
+    text-align: right
+    margin-top: 5px
+    +clr
+    h2
+      font-size: 36px
+      color: #5a7328
+      margin: 0
+      font-family: 'conv_pfagoraslabpro-light'
+      line-height: 1em
+      span
+        font-family: 'conv_pfagoraslabpro-bold'
+  .top_about
+    float: left
+    margin-top: 22px
+    ul
+    li
+      display: inline-block
+      float: left
+      font-family: 'conv_pfdintextcondpro-regular'
+      font-size: 18px
+      color: #e65a32
+      text-transform: uppercase
+      margin-right: 20px
+      span
+        font-family: 'conv_pfdintextcondpro-medium'
+  .header_main_top
+    text-align: left
+    +clr
+    h1
+      color: #5a960a
+      text-align: left
+    h2
+      color: #3c6e00
+      font-size: 24px
+
+  .header_main_main
+    +clr
+    .header_main_main_in
+      +clr
+      @extend %in
+      position: relative
+    .feet
+      position: absolute
+      background: url(../img/feet.png) no-repeat
+      content: ""
+      width: 630px
+      height: 600px
+      left: 260px
+      top: 63px
+
+    .header_left
+      position: relative
+      width: 360px
+      float: left
+      margin-top: 70px
+      +clr
+
+      .header_p
+        font-size: 18px
+        color: #3c6e00
+        padding-left: 20px
+      .price
+        position: absolute
+        top: 42px
+        right: -95px
+        +box
+        width: 140px
+        height: 140px
+        +border-radius(50%)
+        +background-clip(padding-box)
+        background: #ff3b27
+        +background(linear-gradient(to top, #cd276d 0%, #ff3b27 100%))
+        font-family: 'conv_pfagoraslabpro-ublackit'
+        font-size: 48px
+        color: #ffffff
+        line-height: 0.5em
+        text-align: center
+        padding-top: 45px
+        z-index: 1
+
+        span
+          font-size: 16px
+          font-family: 'conv_pfdintextcondpro-light'
+      .same_price
+        @include border-radius(50%)
+        width: 120px
+        height: 120px
+        position: absolute
+        line-height: 1
+        text-align: center
+        +box
+        color: white
+        top: 4px
+        right: -184px
+        font-family: 'conv_pfdintextcondpro-light'
+        font-size: 18px
+        padding-top: 30px
+        padding-left: 20px
+        padding-right: 20px
+        +background-clip(padding-box)
+        +background-image(linear-gradient(to top, #639100 0%, #bde500 100%))
+        +single-text-shadow
+      .discount
+        background: url(../img/discount.png) no-repeat
+        width: 190px
+        height: 80px
+        position: absolute
+        line-height: 1
+        color: white
+        top: 193px
+        right: -190px
+        font-family: 'conv_pfdintextcondpro-light'
+        font-size: 18px
+        padding-top: 22px
+        padding-left: 20px
+        +box
+        +single-text-shadow
+        z-index: 1
+
+    .header_right
+      position: relative
+      float: right
+      margin-top: 240px
+      .success
+        +box
+        padding-top: 40px
+        padding-left: 20px
+        padding-right: 20px
+        font-size: 24px
+        line-height: 1.1em
+        font-family: 'Conv_pfdintextcondpro-light'
+        width: 180px
+        height: 180px
+        +background(linear-gradient(to left, rgba(#599509,.8) 0%, rgba(#3b6d00,.8) 100%))
+        position: absolute
+        top: -360px
+        right: 0
+        text-align: center
+        color: #ffffff
+        +border-radius(50%)
+        +background-clip(padding-box)
+        z-index: 1
+    .header_list
+      position: relative
+      z-index: 1
+      ul
+        li
+          position: relative
+          +border-radius(8px)
+          +background-clip(padding-box)
+          background-color: #3b6d00
+          +background(linear-gradient(to left, rgba(#599509, .8) 0%, rgba(#3b6d00, .8) 100%))
+          margin-bottom: 10px
+          width: 340px
+          height: 60px
+          color: white
+          +box
+          padding: 8px 40px 0 70px
+
+          &:before
+            position: absolute
+            +s(list_icon)
+            left: 20px
+            top: 14px
+            content: ""
+.scrollMenu
+  @extend header
+  .header_in
+    padding-top: 20px
+  position: fixed
+  z-index: 999
+  width: 100%
+  top: 0
+  left: 0
+  bottom: auto
+  display: none
+  height: 60px
+  +box
+  background: rgba(#ffffff, 0.8)
+  .top
+    height: 0
+
+
+
+
+
+.when
+  +clr
+  .when_in
+    @extend %in
+    margin-top: 20px
+    position: relative
+    +clr
+  margin-top: -120px
+  h2
+    color: #ff3c28
+  .when_item
+    width: 280px
+    display: inline-block
+    margin-right: 75px
+    &:nth-child(3)
+      margin-right: 0
+    span
+      position: relative
+      display: block
+      text-align: left
+      +border-radius(8px)
+      +background-clip(padding-box)
+      border: solid 2px #e5f5b3
+      width: 280px
+      height: 60px
+      +box
+      font-size: 18px
+      color: #3c6e00
+      padding-top: 8px
+      line-height: 1em
+      padding-left: 70px
+      padding-right: 10px
+      &.attention
+        color: #d23232
+        border: solid 2px #ffdbdb
+
+      i
+        position: absolute
+        +s(list_icon_green)
+        top: 13px
+        left: 20px
+        &.bang
+          +s(item_bang)
+
+
+
+
+    .when_img
+      margin-top: 20px
+      img
+        width: 280px
+        height: 280px
+        +border-radius(50%)
+
+  p
+    text-align: center
+    font-size: 18px
+    color: #5a5a5a
+    line-height: 1em
+    margin-top: 35px
+    &:last-child
+      margin-top: 0
+
+.action
+  background: url(../img/action_bg.jpg) center center no-repeat
+  +background-size(cover)
+  height: 1383px
+  margin-top: -110px
+  h2
+    text-align: center
+    font-size: 48px
+    color: #ffffff
+    padding-top: 220px
+    font-weight: normal
+    line-height: 1em
+    margin-bottom: 30px
+    span
+      font-family: "conv_pfdintextcondpro-medium"
+  .action_in
+    @extend %in
+    width: 1010px
+    +clr
+    position: relative
+  .tool
+    position: relative
+    color: #ffffff
+    +box
+    font-size: 24px
+    padding-top: 15px
+    text-align: center
+    width: 280px
+    height: 70px
+    display: block
+    background: url(../img/action_tooltip.png)
+    margin-bottom: 20px
+
+  .action_item
+    +clr
+    .action_item_left
+      float: left
+      width: 280px
+      +clr
+    .action_img
+      position: relative
+      &:after
+        position: absolute
+        +s(action_arrow)
+        top: 36px
+        right: -50px
+        content: ""
+      img
+        width: 280px
+        height: 100px
+        +border-radius(8px)
+      span
+        color: #ffffff
+        font-size: 36px
+        +box
+        padding-left: 19px
+        padding-top: 5px
+        top: -10px
+        left: 10px
+        width: 60px
+        height: 60px
+        font-family: 'conv_pfagoraslabpro-bold'
+        position: absolute
+        @include border-radius(30px)
+        +background-clip(padding-box)
+        +background-image(linear-gradient(to bottom, #ff3b27 0%, #cd276d 100%))
+    p
+      font-size: 18px
+      color: #ffffff
+      text-align: left
+      margin-left: 10px
+      padding-right: 70px
+      line-height: .9em
+      margin-bottom: 35px
+    .action_item_right
+      +clr
+      float: right
+      width: 280px
+      .item_img
+        text-align: center
+      h3
+        font-size: 24px
+        color: #ffffff
+        font-weight: normal
+        line-height: 1em
+        margin-bottom: 20px
+      p
+        margin-left: 0
+        padding-right: 0
+  .l1_bottom
+    position: relative
+    .l1_tooltip
+      background: url(../img/tooltip2.png) center no-repeat
+      width: 430px
+      height: 130px
+      color: #ffffff
+      font-size: 24px
+      padding: 20px
+      margin-top: 25px
+      +box
+      line-height: 1em
+    .l1_feet
+      position: absolute
+      bottom: -105px
+      right: 0
+
+  .l2
+    +border-radius(16px)
+    +background-clip(padding-box)
+    background:  rgba(#182d00, .4)
+
+
+    .l2_in
+      @extend %in
+      width: 280px
+
+    .l2_top
+      +border-radius(8px)
+      background: #f9ffe1
+      h3
+        padding-top: 15px
+        margin-top: 10px
+        text-align: center
+        color: #3c6e00
+        font-size: 24px
+        font-weight: normal
+        line-height: 1em
+        margin-bottom: 10px
+      p
+        color: #3c6e00
+        font-size: 16px
+        padding-left: 20px
+        padding-right: 50px
+        padding-bottom: 20px
+    .l2_video
+      position: relative
+      margin-top: 35px
+      h4
+        font-weight: normal
+        font-size: 16px
+        color: #ffffff
+        text-align: center
+        font-family: 'conv_segoeprintregular'
+        margin-top: 5px
+      i
+        position: absolute
+        background: url(../img/logo_firstChannel.png)
+        width: 65px
+        height: 85px
+        top: -45px
+        right: 0
+        z-index: 2
+      .video
+        display: table
+        margin: 0 auto
+        position: relative
+        &:hover
+          +opacity(0.8)
+        .img_video
+          width: 280px
+          left: 160px
+          +border-radius(5px)
+        .play
+          display: table-cell
+          vertical-align: middle
+          position: relative
+          left: -50%
+      .shadow
+        display: table
+        margin: -30px auto 0
+    .l2_bottom
+      p
+        font-size: 18px
+        color: #ffffff
+        padding-left: 10px
+        padding-right: 10px
+        line-height: 1.3em
+        padding-bottom: 10px
+  .leaves
+    position: absolute
+    bottom: -95px
+    left: 65px
+.benefits
+  padding-top: 60px
+  h2
+    color: #5a960a
+    line-height: 1em
+    span
+      text-transform: none
+      span
+        text-transform: uppercase
+  .benefits_in
+    @extend %in
+    margin-top: 40px
+    +clr
+
+  .benefits_left
+    width: 700px
+    float: left
+    padding-right: 50px
+    +box
+    position: relative
+    z-index: 1
+
+  .benefits_item
+    +clr
+    margin-bottom: 20px
+    display: table
+    .ben_img
+      background: url(../img/circle.png) no-repeat
+      width: 140px
+      height: 140px
+      float: left
+      text-align: center
+      display: table
+      margin-right: 30px
+      .vertical_centered
+        display: table-cell
+        vertical-align: middle
+
+    .text
+      width: 520px
+      font-size: 24px
+      color: #3c6e00
+      display: table-cell
+      vertical-align: middle
+
+  .benefits_right
+    float: right
+    width: 280px
+    position: relative
+    .benefits_img_right
+      margin-bottom: 15px
+    .benefits_oranges
+      position: absolute
+      bottom: -205px
+      left: -121px
+  .regular
+    h4
+      color: #ff3c28
+      font-size: 24px
+      font-weight: normal
+      text-align: center
+      margin-top: 25px
+    ul
+      font-size: 18px
+      width: 640px
+      position: relative
+      display: block
+      margin: 5px auto 0
+      li
+.composition
+  background: url(../img/compos_bg.jpg) center no-repeat
+  height: 190px
+  margin-top: 35px
+  .composition_in
+    @extend %in
+  h3
+    font-size: 24px
+    color: #3c6e00
+    text-align: center
+    font-weight: normal
+    padding-top: 10px
+  ul
+    @extend %in
+    width: 820px
+    margin-top: 15px
+    li
+      display: inline-block
+      margin-right: 16px
+      &:last-child
+        margin-right: 0
+      .compos_img
+        display: block
+        img
+          width: 100px
+          height: 100px
+          +border-radius(50%)
+      span
+        display: block
+        text-align: center
+        font-size: 16px
+        color: #3c6e00
+        font-family: 'conv_segoeprintregular'
+.reviews
+  margin-top: 50px
+  h2
+    font-size: 48px
+    color: #5a960a
+    margin-bottom: 30px
+  .reviews_in
+    @extend %in
+  .review_item
+    +border-radius(5px)
+    +background-clip(padding-box)
+    +background(linear-gradient(to bottom, #94C727 0%, #BCC859 10.01%, #D5E490 100%))
+    padding: 2px
+    width: 480px
+    position: relative
+    display: inline-block
+    margin-right: 35px
+    +box
+    &:after
+      position: absolute
+      background: url(../img/review_pop.jpg) no-repeat
+      width: 41px
+      height: 38px
+      left: 10px
+      bottom: -32px
+      content: ""
+    &:last-child
+      margin-right: 0
+    .item
+      +clr
+      background: #ffffff
+      .review_left
+        float: left
+        width: 140px
+        padding-left: 10px
+        padding-top: 10px
+        padding-bottom: 10px
+        +clr
+        .before
+          position: relative
+          display: table
+          margin: 0 auto 15px
+          img
+            width: 140px
+            height: 140px
+            +border-radius(50%)
+          span
+            position: absolute
+            +border-radius(50%)
+            width: 60px
+            height: 60px
+            +background-clip(padding-box)
+            +background(linear-gradient(to bottom, #ff3b27 0%, #cd276d 100%))
+            top: 80px
+            right: -10px
+            color: #ffffff
+            font-size: 18px
+            +box
+            text-align: center
+            padding-top: 15px
+
+        .after
+          position: relative
+          display: table
+          margin: 0 auto
+          img
+            width: 140px
+            height: 140px
+            +border-radius(50%)
+          span
+            position: absolute
+            +border-radius(50%)
+            width: 60px
+            height: 60px
+            +background-clip(padding-box)
+            +background(linear-gradient(to bottom, #bde500 0%, #639100 100%))
+            top: 0
+            right: -10px
+            color: #ffffff
+            font-size: 18px
+            +box
+            text-align: center
+            padding-top: 15px
+
+
+
+    .review_text
+      float: left
+      width: 260px
+      +clr
+      margin-left: 40px
+      padding-right: 10px
+      h3
+        font-size: 24px
+        font-weight: normal
+        color: #ff3c28
+        margin-bottom: 30px
+        padding-top: 15px
+
+      p
+        font-size: 16px
+        color: #3c3c3c
+
+.our
+  margin-top: 60px
+  h2
+    span
+      text-transform: none
+      color: #5a960a
+  .our_in
+    @extend %in
+    margin-top: 20px
+    +clr
+  .our_left
+    +clr
+    float: left
+    background: url(../img/russia.png) center no-repeat
+    height: 330px
+    width: 550px
+    .our_delivery
+      margin-top: 40px
+      font-size: 18px
+      color: #5a5a5a
+      position: relative
+      padding-left: 100px
+      &:before
+        position: absolute
+        content: ""
+        background: url(../img/map_ico.png) left no-repeat
+        width: 80px
+        height: 64px
+        top: -22px
+        left: 0
+  .our_right
+    margin-top: 20px
+    float: right
+    width: 360px
+    +clr
+    .our_item
+      display: table
+      margin-bottom: 20px
+      .our_img
+        float: left
+        margin-right: 20px
+      p
+        display: table-cell
+        vertical-align: middle
+        width: 200px
+
+.bottom
+  @extend header
+  background: url(../img/bottom_bg.jpg) center center no-repeat
+  height: 680px
+  +background-size(cover)
+  +clr
+  .header_main_main
+    .feet
+      top: 80px
+    .header_left
+      margin-top: 165px
+      .price
+        top: -40px
+      .same_price
+        top: -80px
+      .discount
+        top: 115px
+
+
+footer
+  box-sizing: border-box
+  height: 90px
+  @extend %in
+  text-align: center
+  padding-top: 15px
+  p
+    font-size: 16px
+    a
+      color: #5a960a
+      &:hover
+        text-decoration: none
+
+.parallax
+  position: absolute
+
+.par1
+  top: -85px
+  right: 125px
+  width: 265px
+  height: 280px
+
+.par2
+  top: 300px
+  left: -255px
+  width: 310px
+  height: 320px
+.par3
+  top: 473px
+  left: 491px
+  width: 310px
+  height: 320px
+.par4
+  top: 473px
+  left: -386px
+  width: 360px
+  height: 370px
+.par5
+  top: 300px
+  left: 930px
+  width: 230px
+  height: 185px
+//par6==is absent
+.par7
+  top: -180px
+  right: -70px
+  width: 265px
+  height: 280px
+.par8
+  top: 390px
+  left: 440px
+  width: 310px
+  height: 320px
+.par9
+  top: 180px
+  left: -225px
+  width: 310px
+  height: 320px
