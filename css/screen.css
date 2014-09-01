@@ -192,7 +192,7 @@ header .header_main_main .header_list ul li:before, .scrollMenu .header_main_mai
 .benefits .benefits_item .text { width: 520px; font-size: 24px; color: #3c6e00; display: table-cell; vertical-align: middle; }
 .benefits .benefits_right { float: right; width: 280px; position: relative; }
 .benefits .benefits_right .benefits_img_right { margin-bottom: 15px; }
-.benefits .benefits_right .benefits_oranges { position: absolute; bottom: -205px; left: -121px; }
+.benefits .benefits_right .benefits_oranges { position: absolute; bottom: -205px; left: 160px; }
 .benefits .regular h4, .benefits .regular .frm h5, .frm .benefits .regular h5 { color: #ff3c28; font-size: 24px; font-weight: normal; text-align: center; margin-top: 25px; }
 .benefits .regular ul { font-size: 18px; width: 640px; position: relative; display: block; margin: 5px auto 0; }
 
